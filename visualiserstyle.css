@@ -1,0 +1,138 @@
+
+body {
+    background-color: rgb(2, 22, 77);
+    background-image: url('https://cdn.discordapp.com/attachments/892735201132834846/1052678071364362321/Generator_Background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  #file-input {
+    position: fixed;
+     top: 10px;
+    left: 10px;
+    z-index: 3; 
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    width: 30%;
+    margin-top: 10px;
+    border-radius: 2rem;
+    border: 2px solid #000000;
+    background-color: #1a629c;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  audio {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: calc(100% - 25px);
+    z-index: 3;
+  }
+  
+  #name {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 3;
+    color: #eeeeee;
+    font-family: monospace;
+  }
+  
+  #background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(transparent,#00035f,transparent);
+    background-size: 100% 7px; */
+    background-image: url('https://cdn.discordapp.com/attachments/892735201132834846/1052678071364362321/Generator_Background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* animation: bg 1s infinite linear; */
+    z-index: 0;
+    opacity: 0.3;
+  }
+  
+  @keyframes bg {
+    0%{ background-position: 0 0; }
+    100%{ background-position: 8px 8px; }
+  }
+
+  .content{
+    width: 1100px;
+    position: absolute;
+    top: 1.5px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #button-container {
+    display: flex; /* Use flexbox layout for the button container */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: flex-end; /* Align the buttons to the bottom of the container */
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+  }
+
+  #home-button{
+    width: 60px;
+    padding: 7px 0;
+    text-align: center;
+    /* margin: 50px 0px; */
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: arial;
+    border: 2px solid rgb(26, 10, 10);
+    background: #fff;
+    color: #1a629c;
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    left: 5px;
+    z-index: 3;
+    font-family: monospace;
+   
+  }
+  
+  #home-button:hover {
+    border: 2px solid #1a629c;
+    color: #fff;
+    background: #1a629c;
+  }
+
+  .mood-button {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #1a629c;
+    background-color: #fff;
+    color: #1a629c;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px; /* Add some margin around each button */
+    position: absolute;
+    top: 70px;
+    left: 5px;
+    z-index: 3;
+    font-family: monospace;
+}
+
+.mood-button:hover {
+    background-color: #1a629c;
+    color: #fff;
+}
